@@ -1,6 +1,6 @@
 <?php
 /*
-	Plugin Name: sampay WooCommerce Payment Gateway
+	Plugin Name: sampay Payment Gateway
 	Plugin URI: https://github.com/cynojine/sampay-woocommerce 
 	Description: sampay Woocommerce Payment Gateway allows you to accept payment on your Woocommerce store via Visa Cards,MTN MOoMo.
 	Version: 1.0.0
@@ -74,6 +74,7 @@ function sampay_init_gateway_class() {
 			add_action( 'woocommerce_api_'.strtolower(get_class($this)) , array(&$this, 'get_sampay_response' ));
  		 }
 		 
+		  
 		/**
 	 	* Plugin options, we deal with it in Step 3 too
 		*/
@@ -272,7 +273,7 @@ public function sampay_process_onreturn(){
    $type = $item->get_type();
 }
 ;
-$purchasedetails="Purchase";
+	$purchasedetails="Purchase";
 			
 			$data = array(
 				'AppKey'      => $this->appkey, // API Key Merchant / 
