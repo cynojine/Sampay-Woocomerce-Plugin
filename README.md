@@ -1,8 +1,10 @@
-#GNU GPL v3
+
+# Sampay Woocommerce Payment Gateway 
+
+# GNU GPL v3
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-# Sampay Woocommerce Payment Gateway 
 
 Tested Woocommerce Version: 3.4.3
 Tested WP Version: 4.9
