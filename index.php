@@ -201,10 +201,10 @@ public function sampay_process_onreturn(){
             #payment cancelled
 				$respond_desc = "Transaction Cancelled.";
 				$message_resp = "Transaction was cancelled by Sampay User.";
-				$message_type = "error";
+				
 				$order->add_order_note('sampay payment failed:<br> ' . $respond_desc, true);
 				$order->update_status('cancelled');
-				wc_add_notice($order, $message_type);
+				
 				wp_redirect($order->get_cancel_order_url());
             }
             elseif($status=='paid'){
